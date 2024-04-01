@@ -1,0 +1,55 @@
+/* Color styles */
+// --color-gray-1: rgba(109, 109, 109, 1);
+// plugin->manage plugins->export styles to CSS variables->generate->copy
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside section {
+    padding: 20px;
+    border: 2px solid green;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mainBody {
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "aside main main main main";
+    grid-gap: 0.2rem;
+}
+
+aside {
+    display: flex;
+    border: 1px solid red;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+main {
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width: 550px) {
+    .mainBody {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        grid-template-areas:
+            "aside"
+            "main";
+    }
+}
