@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #B4A77E;
+    width: 100%;
+}
+
+.navbar_top,
+.navbar_bottom{
+    width: 100%;
+    float: none;
+}
+
+.navbar_top ul, .navbar_bottom ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+/* .navbar_top ul{
+    list-style-type: none;
+    overflow: hidden;
+} */
+
+/* .navbar_top{
+    float: left;
+} */
+/* .navbar_bottom{
+    float: right;
+} */
+
+.navbar_bottom a, .navbar_top a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar_bottom a:hover, .navbar_top a:hover{
+    background-color: aliceblue;
+}
+
+.navbar_bottom li, .navbar_top li{
+    float: left;
+}
+
+body{
+    background-color: #F0F0DA;
+}   
