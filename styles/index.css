@@ -1,8 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
 header{
     display: flex;
     flex-direction: column;
     background-color: #B4A77E;
-    width: 100%;
+    width: auto;
 }
 
 .navbar_top,
