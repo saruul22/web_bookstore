@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Улаан өсгийтийн нууц",
+        "type": "Гадаадын уран зохиол",
+        "pageNumber": 413,
+        "authorName": "Жожо Мойес",
+        "authorImg": "./Wireframe/user.png",
+        "description": "Нэгэн баян бизнесний...",
+        "price": 25000,
+        "salePrice": 20000,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.5,
+        "coverType": "зузаан",
+        "weight": 70,
+        "dimension": {
+            "height": 230,
+            "width": 150,
+            "tichness": 23
+        },
+        "publishedDate": 2024,
+        "publisher": "bolor sudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    }
+]
