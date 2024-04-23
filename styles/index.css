@@ -51,4 +51,75 @@ header{
 
 body{
     background-color: #F0F0DA;
-}   
+}  
+
+.footer {
+    background-color: #B4A77E;
+  }
+  
+  
+  
+    .footer .box-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3{
+      font-size: 2rem;
+      color: black;
+      padding: 5px 1rem;
+      margin: 0.5rem;
+  }
+  
+  .footer .box-container .box a{
+      display: block;
+      font-size: 1.4rem;
+      color: var(--light-color);
+      padding: 0.3rem 0;
+      margin-left: 1.5rem;
+  }
+  .box-text{
+    margin: 0;
+  }
+  
+  .footer .box-container .box a i{
+      color: var(--green);
+      padding-right: .5rem;
+  }
+  
+  .footer .share{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    padding:1 0rem;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  
+  .footer .box-container .box .share a{
+      height: 3rem;
+      width: 3rem;
+      margin-right: 1.2rem;
+      font-size: 2rem;
+      color: #000000;
+     
+  }
+  
+  .footer .credit{
+    
+      height: max-content;
+      font-size: 1.2rem;
+      color: white;
+     
+      align-items: center;
+     
+      background-color: #C5B78D;
+  }
+  
+  .footer .credit span{
+    font-size: 1.7rem;
+    margin-right: 2.5rem;
+    margin-left: 1.5rem;
+  }
+    
