@@ -3,6 +3,7 @@
 :root{
     --header-color: #B4A77E;
     --body-color: #F0F0DA;
+    --btn-color: #D6CE9B;
     --green: #27ae60;
     --dark-color: #219150;
     --black: #444;
@@ -174,9 +175,9 @@ body{
     background: var(--dark-color);
 }
 
-.books-slider .wrapper img{
+/* .books-slider .wrapper img{
     height: 300px;
-}
+} */
 
 .home{
     background-color: var(--body-color);
@@ -186,14 +187,35 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .home .row .content{
-    flex: 1 1 42rem;
+    flex: 1 1 15rem;
 }
 
-.home .row .books-slider{
+.home .row .content h3{
+    font-size: large;
+}
+
+.home .row .content a{
+    background-color: var(--btn-color);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    height: auto;
+}
+
+.home .row a img{
+    width: 80rem;
+    border-radius: 10px;
+}
+
+/* .home .row .books-slider{
     flex: 1 1 42rem;
     text-align: center;
     margin-top: 2rem;
@@ -205,7 +227,8 @@ body{
 
 .home .row .books-slider a:hover img{
     transform: scale(.9);
-}
+} */
+
 
 
 
@@ -235,6 +258,41 @@ body{
         padding: 3rem 2rem;
     }
 
+    .home .row .content a{
+        background-color: var(--btn-color);
+        border-radius: 15px;
+        padding: 10px;
+        position: relative;
+        top: 20px;
+        color: black;
+        font-weight: 700;
+        font-size: 15px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 850px){
+    .home .row a img{
+        width: 60rem;
+        border-radius: 10px;
+    }
+
+    .header .header-1 .search-form{
+        width: auto;
+    }
+
+    html{
+        font-size: 55%;
+    }
+
+    .header .header-1{
+        padding: 1rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
 }
 
 @media (max-width: 768px){
@@ -278,12 +336,39 @@ body{
     .header .header-1 .search-form.active{
         top: 115%;
     }
+
+    .home .row{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        /* gap: 1rem; */
+    }
+
+    .home .row a img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
 }
 
 @media (max-width: 450px){
 
     html{
+        width: auto;
         font-size: 50%;
     }
 
+        .home .row{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2px;
+        /* gap: 1rem; */
+    }
+
+    .home .row a img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
 }
