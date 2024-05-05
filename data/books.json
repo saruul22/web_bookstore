@@ -34,5 +34,254 @@
                 "comment": "ih shan nom boljee.."
             }
         ]
+    },
+    {
+        "title": "Кофе хөрөхөөс өмнө",
+        "type": "Орчин үеийн утга зохиол",
+        "pageNumber": 232,
+        "authorName": "Кавагүчи Тошиказү",
+        "authorImg": "./Wireframe/user.png",
+        "description": "Жижигхэн кафе, цөөн тооны дүр...",
+        "price": 16900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.0,
+        "coverType": "зөөлөн хавтастай",
+        "weight": 200,
+        "dimension": {
+            "height": 180,
+            "width": 115,
+            "tichness": 19
+        },
+        "publishedDate": 2022,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    },
+    {
+        "title": "Танихгүй эмэгтэйн захидал",
+        "type": "Сонгодог уран зохиол",
+        "pageNumber": 263,
+        "authorName": "Стефан Цвейг",
+        "authorImg": "./Wireframe/user.png",
+        "description": "Тэр залууг анх харахдаа...",
+        "price": 14900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.4,
+        "coverType": "зөөлөн хавтастай",
+        "weight": 230,
+        "dimension": {
+            "height": 180,
+            "width": 115,
+            "tichness": 15
+        },
+        "publishedDate": 2016,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    },
+    {
+        "title": "Ганцаардлын өдрүүд",
+        "type": "Орчин үеийн утга зохиол",
+        "pageNumber": 336,
+        "authorName": "Элена Ферранте",
+        "authorImg": "./Wireframe/user.png",
+        "description": "15 жилийн хамтын амьдрал...",
+        "price": 18900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.2,
+        "coverType": "зөөлөн хавтастай",
+        "weight": 280,
+        "dimension": {
+            "height": 180,
+            "width": 115,
+            "tichness": 20
+        },
+        "publishedDate": 2023,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    },
+    {
+        "title": "Хэсүүлчид",
+        "type": "Орчин үеийн утга зохиол",
+        "pageNumber": 578,
+        "authorName": "Ольга Токарчук",
+        "authorImg": "./Wireframe/user.png",
+        "description": "Энэхүү цуглуулгыг чухам...",
+        "price": 29900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.2,
+        "coverType": "хатуу хавтастай",
+        "weight": 630,
+        "dimension": {
+            "height": 210,
+            "width": 135,
+            "tichness": 30
+        },
+        "publishedDate": 2022,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    },
+    {
+        "title": "Өнчрөл хагацлын он жилүүд",
+        "type": "Орчин үеийн утга зохиол",
+        "pageNumber": 428,
+        "authorName": "Казүо Ишигүро",
+        "authorImg": "./Wireframe/user.png",
+        "description": "1930-1937 оны хооронд...",
+        "price": 29900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.1,
+        "coverType": "хатуу хавтастай",
+        "weight": 600,
+        "dimension": {
+            "height": 210,
+            "width": 135,
+            "tichness": 35
+        },
+        "publishedDate": 2020,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    },
+    {
+        "title": "1Q84",
+        "type": "Орчин үеийн утга зохиол",
+        "pageNumber": 428,
+        "authorName": "Мүраками Харүки",
+        "authorImg": "./Wireframe/user.png",
+        "description": "Зүрх сэтгэлдээ хоногшсон...",
+        "price": 19900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.9,
+        "coverType": "зөөлөн хавтастай",
+        "weight": 440,
+        "dimension": {
+            "height": 210,
+            "width": 135,
+            "tichness": 29
+        },
+        "publishedDate": 2017,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
+    },
+    {
+        "title": "Газар доороос бичсэн тэмдэглэл",
+        "type": "Сонгодог уран зохиол",
+        "pageNumber": 248,
+        "authorName": "Ф.М.Достоевский",
+        "authorImg": "./Wireframe/user.png",
+        "description": "Газар доороос бичсэн...",
+        "price": 12900,
+        "image": "./Wireframe/background.jpg",
+        "rating": 3.0,
+        "coverType": "зөөлөн хавтастай",
+        "weight": 220,
+        "dimension": {
+            "height": 180,
+            "width": 115,
+            "tichness": 16
+        },
+        "publishedDate": 2017,
+        "publisher": "monsudar",
+        "language": "mon",
+        "quote": [
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            },
+            {
+                "img": "",
+                "comment": "ih shan nom boljee.."
+            }
+        ]
     }
 ]
+
+
+
+    
