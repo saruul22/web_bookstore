@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --header-color: #B4A77E;
+    --body-color: #F0F0DA;
+    --btn-color: #D6CE9B;
+    --i-tag: #D9D9D9;
+    --book-card: #FAFAF5;
+    --sales-tag-bg: #DA5A5A;
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #665;
+    --border: .1rem solid rgba(0,0,0,1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+}
+
+
+
+.header .header-1{
+    background: var(--header-color);
+    padding: 1.5rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-1 .logo i{
+    color:var(--black);
+}
+
+.header .header-1 .search-form{
+    width: 50rem;
+    height: 4rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+.header .header-1 .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover{
+    color: var(--green);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color: var(--green);
+}
+
+#search-btn{
+    display: none;
+}
+
+.header .header-2{
+    background: var(--header-color);
+}
+
+.header .header-2 .navbar{
+    text-align: center;
+}
+
+.header .header-2 .navbar a{
+    color: black;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background: #fff;
+}
+
+.header .header-2.active{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .header-1 .text-link a{
+    color: black;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.header .header-1 .text-link a:hover{
+    background-color: white;
+}
+
+
+/* Bottom Navbar */
+
+.bottom-navbar{
+    text-align: center;
+    background: var(--green);
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a{
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.bottom-navbar a:hover{
+    background: var(--dark-color);
+}
+
+
+
+/* Review хэсэг болон үнийн мэдээллийн хэсэг */
+
+
+.image{
+    width: 100%;
+    display: flex;
+    margin: 40px 0;
+    justify-content:space-around;
+}
+
+.image img {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin-right: 5%;
+}
+
+.main-body{
+    display:flex;
+    flex-direction: row;
+    width: 93%;
+    margin: auto;
+    padding-top: 3rem;
+}
+.section_booksale{
+    width: 70%;
+}
+
+.commented-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.commented-text img{
+    width: 5rem;
+    height: 5rem;
+    margin: 5%;
+}
+.description-text{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 5%;
+    font-size: 20px;
+   
+}
+
+.saled-price{
+    display: flex;
+    flex-direction: row;
+    font-size:30px;
+   
+}
+.saled-price p{
+    
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.high-price{
+    text-decoration-line: line-through;
+    text-decoration-color: red; /* Color of the line */
+  
+}
+
+.section_book_description span{
+    font-size: 20px;
+}
+
+.with-icon-img{
+    display: flex;
+flex-direction: row;
+    width: 2rem;
+    height: 2rem;
+}
+
+.with-icon-img-container{
+display: flex;
+flex-direction: column;
+font-size: 20px;
+gap: 1.5rem;
+}
+.with-icon-img-container img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.icon {
+    display: flex;
+    
+    text-align: center;
+    align-items: center;
+}
+.icon img{
+
+    margin-right: 2rem;
+}
+
+
+.section_booksale p{
+    font-size: larger;
+}
+h2{
+margin-top: 20px ;
+font-size: xx-large;
+}
+
+
+.section_book_description{
+    width: 30%;
+    margin-top:1rem ;
+}
+#main-book{
+width: 100%;
+height: 50%;
+margin-bottom: 1.5rem;
+}
+
+
+
+.button{
+    margin-top: 10px;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color:#D6CE9B;
+    font-size: 20px;
+}
+.button i{
+    margin-right: 0.7rem;
+}
+    
+
+
+
+
+
+
+.footer {
+    background-color: #B4A77E;
+  }
+  
+  
+  
+.footer .box-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3{
+      font-size: 2rem;
+      color: black;
+      padding: 5px 1rem;
+      margin: 0.5rem;
+  }
+  
+  .footer .box-container .box a{
+      display: block;
+      font-size: 1.4rem;
+      color: var(--light-color);
+      padding: 0.3rem 0;
+      margin-left: 1.5rem;
+  }
+  .box-text{
+    margin: 0;
+  }
+  
+  .footer .box-container .box a i{
+      color: var(--green);
+      padding-right: .5rem;
+  }
+  
+  .footer .share{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    padding:1 0rem;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  
+  .footer .box-container .box .share a{
+      height: 3rem;
+      width: 3rem;
+      margin-right: 1.2rem;
+      font-size: 2rem;
+      color: #000000;
+     
+  }
+  
+  .footer .credit{
+    
+      height: max-content;
+      font-size: 1.2rem;
+      color: white;
+     
+      align-items: center;
+     
+      background-color: #C5B78D;
+  }
+  
+  .footer .credit span{
+    font-size: 1.7rem;
+    margin-right: 2.5rem;
+    margin-left: 1.5rem;
+  }

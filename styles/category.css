@@ -1,6 +1,6 @@
 /* Color styles */
-// --color-gray-1: rgba(109, 109, 109, 1);
-// plugin->manage plugins->export styles to CSS variables->generate->copy
+ /* --color-gray-1: rgba(109, 109, 109, 1);
+ plugin->manage plugins->export styles to CSS variables->generate->copy */
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
