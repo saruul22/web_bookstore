@@ -709,6 +709,13 @@ html::-webkit-scrollbar-thumb{
 
 /* Media Queries */
 
+@media (max-width: 925px){
+    .products-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 300px);
+    }
+}
+
 @media (max-width: 991px){
 
     html{
