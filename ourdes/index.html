@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bookly Home</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
     <script src="https://kit.fontawesome.com/4b0d85336a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
 </head>
 <body>
+
+    <!-- LOGIN FORM CONTAINER -->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+        
+        <form action="">
+            <h3>нэвтрэх</h3>
+            <span>утасны дугаар</span>
+            <input type="email" name="" class="box" placeholder="утасны дугаараа оруулна уу..." id="email">
+            <span>нууц үг</span>
+            <input type="password" name="" class="box" placeholder="нууц үг..." id="pass">            
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">намайг сана</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <div class="login-links">
+                <a href="#">нууц үг сэргээх</a>
+                <a href="#">бүртгүүлэх</a>    
+            </div>
+        </form>
+    </div>
 
     <!-- HEADER NAVBAR -->
     <header class="header">
@@ -754,6 +775,18 @@
             </div>
         </section>
 
+        <!-- PUBLISHER SECTION STARTS HERE -->
+
+        <section class="publishers_section">
+            <h2 class="product-category">хамтран ажиллагч хэвлэлийн газрууд</h2>
+            <article class="publishers">
+                <a href="#"><img src="../Wireframe/publishers/monsudar.webp" alt=""></a>
+                <a href="#"><img src="../Wireframe/publishers/nepko.webp" alt=""></a>
+                <a href="#"><img src="../Wireframe/publishers/penguin.jpg" alt=""></a>
+                <a href="#"><img src="../Wireframe/publishers/shinchisha.png" alt=""></a>
+            </article>
+        </section>
+
     </section>
 
 
@@ -761,10 +794,47 @@
 
     <!-- home section ENDS here  -->
 
+    <article class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Бидний тухай </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Салбаруудын мэдээлэл </a>
+            </div>
 
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Үйлчилгээний нөхцөл </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Түгээмэл асуултууд </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Төлбөр төлөлт </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Буцаалт </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Хүргэлт </a>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> 80465520 </a>
+                <a href="#"><i class="fas fa-envelope"></i> bookee@gmail.com </a>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Address</h3>
+                <a href="#" class="box-text"> <i class="fas fa-map-pin"></i> Олимпын гудамж, 1-р хороо, Сүхбаатар дүүрэг, Улаанбаатар хот, Монгол улс NewHorizon center - 401 тоот </a>
+            </div>        
+        </div>
+
+        <div class="credit"> <span>bookee.mn</span> @2024 бүх эрх хуулиар хамагаалагдсан болно </div>
+    </article>
 
 
 
 
 </body>
+<script src="./script.js"></script>
+<script src="./login.js"></script>
 </html>
