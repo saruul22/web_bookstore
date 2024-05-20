@@ -1,0 +1,24 @@
+.nemelt {
+    display: flex;
+    flex-direction: row;
+}
+
+.tses {
+    display: grid;
+    width: 500px;
+    margin-right: 5%;
+}
+
+.tses b{
+    margin-top:50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.tses a{
+    margin-left: 50px;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
