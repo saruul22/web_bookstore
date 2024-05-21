@@ -1,0 +1,47 @@
+.nemelt {
+    display: flex;
+    flex-direction: row;
+}
+
+.tses {
+    margin-right: 5%;
+    border-right: 1px black solid;
+    margin-top: 5%;;
+}
+
+.tses b{
+    margin-top:50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.tses a{
+    margin-left: 50px;
+    font-size: 25px;
+    color: black;
+    display: block;
+    width: 600px;
+}
+
+.information{
+    display:grid;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.information a{
+    color: black;
+    margin-left: 30px;
+    display: block;
+}
+
+.information p{
+
+}
