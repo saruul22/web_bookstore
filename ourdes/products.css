@@ -161,7 +161,7 @@ ul{
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform:inherit;
     transition: all .2s linear;
     transition: width none;
 }
