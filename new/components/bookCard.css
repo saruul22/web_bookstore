@@ -9,6 +9,7 @@
     --main-body: #F0F0DA;
     --card: #FAFAF5;
     --btn: #D6CE9B;
+    --icon-bg: #00BFB2;
 }
 
 body{
@@ -165,5 +166,9 @@ a{
 }
 
 .button button:hover{
-    background-color: var(--card);
+    background-color: var(--i-tag);
+}
+
+.button button:hover i{
+    color:var(--card);
 }
