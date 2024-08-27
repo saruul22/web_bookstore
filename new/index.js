@@ -1,3 +1,3 @@
 import { bookCard } from "./components/bookCard.js";
 
-customElements.define("product-card", bookCard);
+customElements.define("book-card", bookCard);
