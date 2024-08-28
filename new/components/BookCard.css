@@ -72,8 +72,8 @@ body{
 }
 
 .product-image{
-    width: auto;
-    height: auto;
+    width: 170px;
+    height: 268px;
     /* position: relative; */
 }
 
