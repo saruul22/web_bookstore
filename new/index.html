@@ -6,12 +6,132 @@
     <title>Document</title>
     <script type="module" src="./index.js"></script>
     <script src="https://kit.fontawesome.com/4b0d85336a.js" crossorigin="anonymous"></script>
+    <script src="./scroll_lock.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <book-card></book-card>
+        <!-- LOGIN FORM CONTAINER -->
+        <div class="login-form-container">
+            <div id="close-login-btn" class="fas fa-times"></div>
+            
+            <form action="">
+                <h3>нэвтрэх</h3>
+                <span>утасны дугаар</span>
+                <input type="email" name="" class="box" placeholder="утасны дугаараа оруулна уу..." id="email">
+                <span>нууц үг</span>
+                <input type="password" name="" class="box" placeholder="нууц үг..." id="pass">            
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">намайг сана</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <div class="login-links">
+                    <a href="#">нууц үг сэргээх</a>
+                    <a href="#">бүртгүүлэх</a>    
+                </div>
+            </form>
+        </div>
+    
+        <!-- HEADER NAVBAR -->
+        <header class="header">
+            <div class="header-1">
+                <a href="#" class="logo"><i class="fas fa-book">bookly</i></a>
+    
+                <form action="" class="search-form">
+                    <input type="search" placeholder="Хайх" id="search-box">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+    
+                <nav class="text-link">
+                    <a href="">гишүүнчлэл</a>
+                    <a href="">купон</a>
+                </nav>
+    
+                <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <div id="login-btn" class="fas fa-user"></div>
+                </div>
+            </div>
+    
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="">номын төрөл</a>
+                    <a href="">онцлох ном</a>
+                    <a href="">бестселлер</a>
+                    <a href="">бидний тухай</a>
+                    <a href="">хамтран ажиллах</a>
+    
+                </nav>
+            </div>
+        </header>
+    
+        <!-- Bottom Navbar -->
+        <nav class="bottom-navbar">
+            <a href="" class="fas fa-home"></a>
+            <a href="" class="fas fa-list"></a>
+            <a href="" class="fas fa-tags"></a>
+            <a href="" class="fas fa-comments"></a>
+            <a href="" class="fas fa-blogs"></a>
+        </nav>
+
+            <!-- home section starts here -->
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+                <a href="#">
+                    <img src="../Wireframe/леброн.webp" alt="Леброн">
+                </a>
+
+            <div class="content">
+                <h3>Энэ 7 хоногийн онцлох ном</h3>
+                <p>Акронд төрж өссөн ганцаардмал хүү хэрхэн сагсанбөмбөгийн спортын агуу тамирчин, тэрбумтан болсон сэтгэл хөдөлгөм түүхийг уншигч та энэхүү номоос уншаарай.</p>
+                <a href="#" class="btn">Дэлгэрэнгүй үзэх</a>
+            </div>
+
+        </div>
+
+        <section class="best-seller">
+            <h2 class="product-category">бестселлер бүтээлүүд</h2>
+            <button class="pre-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nxt-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="product-container">
+                <p-card
+                title="jishee"
+                author="zohiolch"
+                price="9'999"
+                sale-price="4'499"
+                img-src="./pics/2.jpg",
+                rank="2">
+                </p-card>
+                <p-card
+                title="jishee"
+                author="zohiolch"
+                price="9'999"
+                sale-price="4'499"
+                img-src="">
+                </p-card>
+                <book-card></book-card>
+                <book-card></book-card>
+                <book-card></book-card>
+                <book-card></book-card>    
+            </div>
+
+        </section>
+
+        <book-card></book-card>
+    <p-card></p-card>
     <p-card
         title="1Q84"
         author="Haruki Murakami"

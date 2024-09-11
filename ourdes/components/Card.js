@@ -1,6 +1,6 @@
 export class Card extends HTMLElement {
     static get observedAttributes() {
-        return ['title', 'author', 'price', 'sale-price', 'img-src', 'rank'];
+        return ['title', 'author', 'price', 'sale-price', 'image-src'];
     }
 
     constructor() {
@@ -9,34 +9,16 @@ export class Card extends HTMLElement {
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
-        // if (name === 'title') {
-        //     this.shadowRoot.querySelector('.book-title').textContent = newValue;
-        // } else if (name === 'author') {
-        //     this.shadowRoot.querySelector('.author-title').textContent = newValue;
-        // } else if (name === 'price') {
-        //     this.shadowRoot.querySelector('.actual-price').textContent = `${newValue}₮`;
-        // } else if (name === 'sale-price') {
-        //     this.shadowRoot.querySelector('.sales-price').textContent = `${newValue}₮`;
-        // } else if (name === 'img-src') {
-        //     this.shadowRoot.querySelector('.product-image img').src = newValue;
-        // }
-
-        const mappings = {
-            'title': '.book-title',
-            'author': '.author-title',
-            'price': '.actual-price',
-            'sale-price': '.sales-price',
-            'img-src': '.product-image img',
-            'rank': '.rank-tag'
-        };
-
-        const element = this.shadowRoot.querySelector(mappings[name]);
-        if(element){
-            if(name === 'img-src'){
-                element.src = newValue || '/home/saruul/web_bookstore/new/pics/default.jpg';
-            } else {
-            element.textContent = name === 'price' || name === 'sale-price' ? `${newValue}₮` : newValue;
-            }
+        if (name === 'title') {
+            this.shadowRoot.querySelector('.book-title').textContent = newValue;
+        } else if (name === 'author') {
+            this.shadowRoot.querySelector('.author-title').textContent = newValue;
+        } else if (name === 'price') {
+            this.shadowRoot.querySelector('.actual-price').textContent = `${newValue}$`;
+        } else if (name === 'sale-price') {
+            this.shadowRoot.querySelector('.sales-price').textContent = `${newValue}$`;
+        } else if (name === 'image-src') {
+            this.shadowRoot.querySelector('.product-image img').src = newValue;
         }
     }
 
@@ -59,13 +41,13 @@ export class Card extends HTMLElement {
         <link rel="stylesheet" href="./components/BookCard.css">
 
         <article class="product-card">
-            <span class="rank-tag">${this.getAttribute('rank')}</span>
+            <span class="rank-tag">1</span>
             <div class="i-tag">
                 <span class="weight-tag"><i class="fas fa-feather"></i></span>
                 <span class="page-count"><i>451</i></span>
             </div>
             <div class="product-image">
-                <img src="${this.getAttribute('img-src')}" alt="book-cover">
+                <img src="${this.getAttribute('image-src')}" alt="book-cover">
             </div>
             <div class="product-info">
                 <div class="author-info">
