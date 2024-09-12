@@ -1,6 +1,6 @@
 export class Card extends HTMLElement {
     static get observedAttributes() {
-        return ['title', 'author', 'price', 'sale-price', 'img-src', 'rank'];
+        return ['title', 'author', 'price', 'sale-price', 'img-src', 'auth-img', 'rank', 'page-count', 'weight'];
     }
 
     constructor() {
@@ -27,15 +27,25 @@ export class Card extends HTMLElement {
             'price': '.actual-price',
             'sale-price': '.sales-price',
             'img-src': '.product-image img',
-            'rank': '.rank-tag'
+            'auth-img': '.author-img img',
+            'rank': '.rank-tag',
+            'page-count': '.page-count i',
+            'weight': '.weight-tag i'
         };
 
         const element = this.shadowRoot.querySelector(mappings[name]);
         if(element){
-            if(name === 'img-src'){
+            if(name === 'img-src' || name === 'auth-img'){
                 element.src = newValue || '/home/saruul/web_bookstore/new/pics/default.jpg';
+            } else if(name === 'sale-price'){
+                if(newValue){
+                    element.textContent = `${newValue}₮`;
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
             } else {
-            element.textContent = name === 'price' || name === 'sale-price' ? `${newValue}₮` : newValue;
+                element.textContent = (name === 'price') ? `${newValue}₮` : newValue;
             }
         }
     }
@@ -61,8 +71,8 @@ export class Card extends HTMLElement {
         <article class="product-card">
             <span class="rank-tag">${this.getAttribute('rank')}</span>
             <div class="i-tag">
-                <span class="weight-tag"><i class="fas fa-feather"></i></span>
-                <span class="page-count"><i>451</i></span>
+                <span class="weight-tag"><i class="${this.getAttribute('weight')}"></i></span>
+                <span class="page-count"><i>${this.getAttribute('page-count') || 'N/A'}</i></span>
             </div>
             <div class="product-image">
                 <img src="${this.getAttribute('img-src')}" alt="book-cover">
@@ -70,7 +80,7 @@ export class Card extends HTMLElement {
             <div class="product-info">
                 <div class="author-info">
                     <div class="author-img">
-                        <img src="./pics/haruki_murakami.jpg" alt="">
+                        <img src="${this.getAttribute('auth-img')}" alt="">
                     </div>
                     <div class="title">
                         <a href="#" class="book-title">${this.getAttribute('title')}</a>
@@ -79,7 +89,7 @@ export class Card extends HTMLElement {
                 </div>
                 <div class="price">
                     <div class="actual-price">${this.getAttribute('price')}₮</div>
-                    <div class="sales-price">${this.getAttribute('sale-price')}₮</div>
+                    <div class="sales-price">${this.getAttribute('sale-price')}</div>
                 </div>
             </div>
             <div class="button">
