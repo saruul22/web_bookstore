@@ -1,29 +1,35 @@
 const express = require('express');
+const admin = require('firebase-admin');
+const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-const books = {
-    1: {
-        title: "1Q84",
-        author: "Haruki Murakami",
-        price: "19'999",
-        salePrice: "14'999",
-        imgSrc: "./pics/1.jpg",
-        authImg: "./pics/haruki_murakami.jpg",
-        rank: "2",
-        pageCount: "928",
-        weight: "0.8kg"
-    },
-};
 
-app.get('/api/books/:id', (req, res) => {
-    const bookId = req.params.id;
-    const book = books[bookId];
+app.use(express.json());
+app.use(cors());
 
-    if (book) {
-        res.json(book);
-    } else {
-        res.status(404).json({ error: "Book not found" });
+const serviceAccount = require('../database/firebaseKey.json');
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://web-bookstore-2f805.firebaseio.com"
+});
+
+const db = admin.firestore();
+const booksCollection = db.collection('books');
+
+app.get('/api/books/:id', async (req, res) => {
+    try {
+        const bookRef = booksCollection.doc(req.params.id);
+        const bookDoc = await bookRef.get();
+
+        if(bookDoc.exists) {
+            res.json(bookDoc.data());
+        } else {
+            res.status(404).json({ error: "Book not found" });
+        }
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
 });
 
